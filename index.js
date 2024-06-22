@@ -2,7 +2,7 @@ const { addonBuilder } = require("stremio-addon-sdk");
 const axios = require("axios");
 
 // Replace this with your TMDb API key
-const TMDB_API_KEY = "YOUR_TMDB_API_KEY";
+const TMDB_API_KEY = "bb26a16d81e1f9e7e749258582492036";
 
 // Cache setup
 const cache = new Map();
