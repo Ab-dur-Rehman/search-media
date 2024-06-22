@@ -1,0 +1,14 @@
+{
+    "name": "my-media",
+    "version": "1.0.0",
+    "description": "An addon to list movies and TV shows by year, genre, rating, runtime, and language.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node api/index.js"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "express": "^4.17.1",
+        "stremio-addon-sdk": "^1.1.0"
+    }
+}
