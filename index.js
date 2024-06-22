@@ -25,7 +25,7 @@ const fetchMovies = async (year, genre, rating, runtime, language) => {
                 'with_runtime.gte': runtime,
                 with_original_language: language
             },
-            timeout: 5000 // Set timeout for API request
+            timeout: 60000 // Set timeout for API request
         });
         return response.data.results.map(movie => ({
             id: `tmdb:${movie.id}`,
@@ -53,7 +53,7 @@ const fetchMovieDetails = async (movieId) => {
                 language: "en-US",
                 append_to_response: "credits,videos"
             },
-            timeout: 5000 // Set timeout for API request
+            timeout: 60000 // Set timeout for API request
         });
         const movie = response.data;
         return {
